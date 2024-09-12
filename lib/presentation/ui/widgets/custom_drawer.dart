@@ -63,6 +63,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
   @override
   Widget build(BuildContext context) {
     return Drawer(
+      backgroundColor: Colors.white,
       width: 220,
       child: Container(
         child: ListView(
@@ -73,7 +74,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 elevation: 8.0,
                 shape: const CircleBorder(),
                 child: CircleAvatar(
-                  backgroundColor: Colors.grey[100],
+                  //backgroundColor: Colors.grey[100],
+                  backgroundColor: Colors.white,
+                  //backgroundColor: Colors.red,
                   radius: 40.0,
                   child: Image.asset(
                     //ImageAssets.bulkcorLogoPNG,
@@ -85,8 +88,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
             ),
             ///---------------------------------------- হোম -------------------------------------------------------------///
             ListTile(
-              //leading: SvgPicture.asset(ImageAssets.homeIconSVG),
-              leading: Icon(Icons.home),
+              leading: SvgPicture.asset(ImageAssets.homeIcon03SVG, width: 23,),
+              //leading: Icon(Icons.home),
               //title: const Text('হোম'),
 
               title: const Text(
@@ -106,6 +109,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen(),),);
               },
             ),
+            Divider(
+              height: 5,
+              color: Colors.grey[300],
+            ),
             ///---------------------------------------- Add New Customer -------------------------------------------------///
             // ListTile(
             //   leading: SvgPicture.asset(ImageAssets.addCustomerIconSVG),
@@ -119,8 +126,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
             ///---------------------------------------- আমাদের সম্পর্কে ----------------------------------------------------///
             ListTile(
               //leading: SvgPicture.asset(ImageAssets.listIconSVG),
-              //leading: SvgPicture.asset(ImageAssets.homeIconSVG),
-              leading: Icon(Icons.app_blocking_outlined),
+              leading: SvgPicture.asset(ImageAssets.aboutUsIconSVG, width: 23,),
+              //leading: Icon(Icons.app_blocking_outlined),
               //title: const Text('Customer List'),
 
               title: const Text(
@@ -143,14 +150,18 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 //Navigator.of(context).push(CustomRouteBuilder(MaterialPageRoute(builder: (context) => const CustomerListScreen(),),),);
               },
             ),
+            Divider(
+              height: 5,
+              color: Colors.grey[300],
+            ),
             ///---------------------------------------- কেন এই অ্যাপ  --------------------------------------------------///
             ListTile(
               //leading: SvgPicture.asset(ImageAssets.orderIconSVG, width: 23,),
-              //leading: SvgPicture.asset(ImageAssets.homeIconSVG, width: 23,),
+              leading: SvgPicture.asset(ImageAssets.whyIconSVG, width: 23,),
+              //leading: Icon(Icons.account_circle_outlined),
+              //leading: SvgPicture.asset(ImageAssets.whyThisAppIconSVG, width: 23,),
 
-              leading: Icon(Icons.account_circle_outlined),
               //title: const Text('Order Placement'),
-
               title: const Text(
                 'কেন এই অ্যাপ ?',
                 //'drawar_menu_home'.tr,
@@ -168,11 +179,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 //Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderCustomerListScreen(),),);
               },
             ),
+            Divider(
+              height: 5,
+              color: Colors.grey[300],
+            ),
             ///---------------------------------------- যোগাযোগ  --------------------------------------------------///
             ListTile(
               //leading: SvgPicture.asset(ImageAssets.passwordChangeIconBlackSVG, width: 23),
-              //leading: SvgPicture.asset(ImageAssets.homeIconSVG, width: 23),
-              leading: Icon(Icons.confirmation_num_outlined),
+              leading: SvgPicture.asset(ImageAssets.contactUsIconSVG, width: 23),
+              //leading: Icon(Icons.confirmation_num_outlined),
               //title: const Text('Password Change'),
 
               title: const Text(
@@ -193,11 +208,15 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 // Add navigation or functionality for password change here
               },
             ),
+            Divider(
+              height: 5,
+              color: Colors.grey[300],
+            ),
             ///---------------------------------------- লগ আউট  ----------------------------------------------------------///
             ListTile(
               //leading: SvgPicture.asset(ImageAssets.logoutIconSVG),
-              //leading: SvgPicture.asset(ImageAssets.homeIconSVG),
-              leading: Icon(Icons.login),
+              leading: SvgPicture.asset(ImageAssets.logOutIcon04SVG, width: 23,),
+              //leading: Icon(Icons.login),
               //title: const Text('Log Out'),
 
               title: const Text(
@@ -224,6 +243,10 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 }
                 // Add functionality for logging out here
               },
+            ),
+            Divider(
+              height: 5,
+              color: Colors.grey[300],
             ),
           ],
         ),

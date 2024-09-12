@@ -3,6 +3,9 @@ import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/app_colors.dart';
+import '../utils/image_assets.dart';
+
 
 
 class CustomAppBar extends StatefulWidget implements PreferredSizeWidget {
@@ -103,13 +106,13 @@ class _CustomAppBarState extends State<CustomAppBar> {
               )
           ),
           elevation: 0,
-          //backgroundColor: AppColors.primaryColorShadRedAccent,
-          backgroundColor: Colors.redAccent,
+          backgroundColor: AppColors.primaryColor,
+          //backgroundColor: Colors.redAccent,
           leading: Builder(
             builder: (context) {
               return IconButton(
-                //icon: SvgPicture.asset(ImageAssets.menuIconSVG),
-                icon: Icon(Icons.menu),
+                icon: SvgPicture.asset(ImageAssets.homeIcon02SVG),
+                //icon: Icon(Icons.menu),
                 iconSize: 25,
                 onPressed: () => Scaffold.of(context).openDrawer(),
               );
@@ -123,14 +126,13 @@ class _CustomAppBarState extends State<CustomAppBar> {
                   _onBackButtonPress();
                 }
               },
-              icon: Icon(Icons.login),
+              //icon: Icon(Icons.login),
               //icon: Icon(SvgPicture.asset(ImageAssets.homeIconSVG)),
-              // icon: SvgPicture.asset(
-              //   //ImageAssets.logoutIcon2SVG,
-              //
-              //   width: 24,  // Adjust the width as needed
-              //   height: 24, // Adjust the height as needed
-              // ),
+              icon: SvgPicture.asset(
+                ImageAssets.logOutIcon02SVG,
+                width: 24,  // Adjust the width as needed
+                height: 24, // Adjust the height as needed
+              ),
             ),
           ],
         ),
