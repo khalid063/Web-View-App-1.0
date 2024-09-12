@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
+import 'package:web_view_app/presentation/ui/screens/about_us_screen.dart';
+import 'package:web_view_app/presentation/ui/screens/contact_us_screen.dart';
+import 'package:web_view_app/presentation/ui/screens/why_this_app.dart';
 import 'package:web_view_app/presentation/ui/utils/app_colors.dart';
 import '../screens/home_screen.dart';
 import '../utils/image_assets.dart';
@@ -144,7 +147,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
 
               onTap: () {
                 print("Customer List is Clicked");
-                //Get.to(CustomerListScreen());
+                Get.to(
+                    ()=> const AboutUsScreen(),
+                );
                 //Navigator.push(context, MaterialPageRoute(builder: (context) => const CustomerListScreen(),),);
                 //Navigator.push(context, MaterialPageRoute(builder: (context) => const CustomerListForAddCustomer(),),);
                 //Navigator.of(context).push(CustomRouteBuilder(MaterialPageRoute(builder: (context) => const CustomerListScreen(),),),);
@@ -177,6 +182,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
               onTap: () {
                 print("Order Placement");
                 //Navigator.push(context, MaterialPageRoute(builder: (context) => const OrderCustomerListScreen(),),);
+                Get.to(
+                      ()=> const WhyThisAppScreen(),
+                );
               },
             ),
             Divider(
@@ -206,6 +214,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 print("Password Change is Clicked");
                 //Navigator.push(context, MaterialPageRoute(builder: (context) => const PasswordChangeScreen(),),);
                 // Add navigation or functionality for password change here
+                Get.to(
+                      ()=> const ContactUsScreen(),
+                );
               },
             ),
             Divider(

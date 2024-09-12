@@ -95,7 +95,8 @@ class _CustomAppBarState extends State<CustomAppBar> {
           centerTitle: true,
           title: Text(
             widget.title,
-            style: const TextStyle(color: Colors.white, fontSize: 22,),
+            //style: const TextStyle(color: Colors.white, fontSize: 22, fontFamily: 'ethnocentric.regular',),
+            style: const TextStyle(color: Colors.white, fontSize: 22, fontFamily: 'Aikya',),
           ),
           shape: const RoundedRectangleBorder(
               borderRadius: BorderRadius.only(

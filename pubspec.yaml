@@ -42,7 +42,7 @@ flutter:
   fonts:
     - family: digital-7-mono
       fonts:
-        - asset: font/digital-7-mono.ttf
+        - asset: font/ethnocentric.regular.ttf
     #       - asset: fonts/Schyler-Italic.ttf
     #         style: italic
     - family: Aikya
