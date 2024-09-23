@@ -5,6 +5,10 @@ class ImageAssets {
 
   //static const String bulkcorLogoPNG = '$_IMAGE_PATH/bulkcor_logo_300.png';
   static const String logoOfSplashScreenPNG = '$_IMAGE_PATH/prachurjo_logo.png';
+  static const String imageNewLogoPNG= '$_IMAGE_PATH/prachurjo_logo_512.png';
+
+
+
   static const String homeIconSVG = '$_IMAGE_PATH/home_icon.svg';
   static const String homeIcon02SVG = '$_IMAGE_PATH/menu_icon_2.svg';
   static const String homeIcon03SVG = '$_IMAGE_PATH/home_icon_2.svg';
@@ -14,6 +18,8 @@ class ImageAssets {
   static const String contactUsIconSVG = '$_IMAGE_PATH/contact_us_icon.svg';
   static const String logOutIcon03SVG = '$_IMAGE_PATH/logout_icon_02.svg';
   static const String logOutIcon04SVG = '$_IMAGE_PATH/logout_icon_04.svg';
+
+
 
 
 

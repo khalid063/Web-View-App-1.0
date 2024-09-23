@@ -88,8 +88,8 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   radius: 40.0,
                   child: Image.asset(
                     //ImageAssets.bulkcorLogoPNG,
-                    ImageAssets.logoOfSplashScreenPNG,
-                    height: 30,
+                    ImageAssets.imageNewLogoPNG,
+                    height: 80,
                   ),
                 ),
               ),

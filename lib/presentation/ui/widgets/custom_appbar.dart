@@ -84,6 +84,7 @@ class _CustomAppBarState extends State<CustomAppBar> {
   //   )) ?? false;
   // }
 
+  ///=========================================================== Scaffold Area ============================///
   @override
   Widget build(BuildContext context) {
     return SafeArea(
