@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:web_view_app/presentation/ui/screens/about_us_screen.dart';
@@ -44,6 +45,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                 ),
                 TextButton(
                   onPressed: () {
+
                     // Navigator.pushAndRemoveUntil(
                     //   context,
                     //   MaterialPageRoute(
@@ -51,6 +53,9 @@ class _CustomDrawerState extends State<CustomDrawer> {
                     //   ),
                     //       (route) => false,
                     // );
+
+                    SystemNavigator.pop(); // This will close the app
+
                   },
                   child: const Text('Yes'),
                 ),
@@ -251,6 +256,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
                   //   MaterialPageRoute(builder: (context) => const LoginScreen()),
                   //       (route) => false,
                   // );
+                  _onBackButtonPress();
                 }
                 // Add functionality for logging out here
               },
