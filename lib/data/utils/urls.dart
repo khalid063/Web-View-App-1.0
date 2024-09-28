@@ -18,10 +18,12 @@ class Urls {
 
   //https://prachurja.com/api/page/apps-why-use-prachurja
   static String whyUsePrachurjaContent = '$_baseurl/api/page/apps-why-use-prachurja';
+  //https://prachurja.com/api/page/apps-contact-us
+  static String contactUsContent = '$_baseurl/api/page/apps-contact-us';
 
   ///---------- Contact Us API --------///
   //static String login = '$_baseurl/account/login/';
-  static String contactUsContent = '$_baseurl/contact-us.json';
+  //static String contactUsContent = '$_baseurl/contact-us.json';
 
   ///---------- Related Hadith API --------///
   //static String login = '$_baseurl/account/login/';

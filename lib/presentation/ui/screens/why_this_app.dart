@@ -79,7 +79,7 @@ class _WhyThisAppScreenState extends State<WhyThisAppScreen> {
 
 
 
-  ///========================================= Scaffold Area =================================================================///
+  ///========================================= Scaffold Area ==================================================================///
   @override
   Widget build(BuildContext context) {
     return Scaffold(
