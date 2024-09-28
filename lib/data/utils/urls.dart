@@ -15,6 +15,10 @@ class Urls {
   //static String aboutUsContent = '$_baseurl/about-us.json';
   static String aboutUsContent = '$_baseurl/api/page/app-about-us';
 
+
+  //https://prachurja.com/api/page/apps-why-use-prachurja
+  static String whyUsePrachurjaContent = '$_baseurl/api/page/apps-why-use-prachurja';
+
   ///---------- Contact Us API --------///
   //static String login = '$_baseurl/account/login/';
   static String contactUsContent = '$_baseurl/contact-us.json';

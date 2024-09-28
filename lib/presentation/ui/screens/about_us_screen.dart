@@ -25,7 +25,6 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
 
 
   ///========================================= API Call ======================================================================///
-  ///-------------------------------------- Main Function Create for API Call -----------------
   AboutUsContentModel _aboutUsContentModel = AboutUsContentModel();
   Future<void> getAboutUsContent() async {
     _getAboutUsContentInProgress = true;
