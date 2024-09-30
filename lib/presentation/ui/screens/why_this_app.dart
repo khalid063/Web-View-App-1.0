@@ -91,22 +91,27 @@ class _WhyThisAppScreenState extends State<WhyThisAppScreen> {
 
       ///------------------------------------- body ---------------------------------------------------------------------------///
       body: SafeArea(
-        child: Center(
-          child: Text(
-            //'কেন এই অ্যাপ ?',
-            //'drawar_menu_home'.tr,
-
-            _whyUsePrachurjaContentList.isNotEmpty
-                ? _whyUsePrachurjaContentList[0].description ?? 'No description available'
-                : 'Loading...',
-
-
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-              //color: _isHomeSelected ? Colors.white : Colors.blue, // Change text color based on isSelected
-              color: AppColors.primaryColor, // Change text color based on isSelected
-              fontFamily: 'Aikya',
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20, right: 20),
+          child: SingleChildScrollView(
+            child: Center(
+              child: Text(
+                //'কেন এই অ্যাপ ?',
+                //'drawar_menu_home'.tr,
+            
+                _whyUsePrachurjaContentList.isNotEmpty
+                    ? _whyUsePrachurjaContentList[0].description ?? 'No description available'
+                    : 'Loading...',
+            
+            
+                style: const TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  //color: _isHomeSelected ? Colors.white : Colors.blue, // Change text color based on isSelected
+                  color: AppColors.primaryColor, // Change text color based on isSelected
+                  fontFamily: 'Aikya',
+                ),
+              ),
             ),
           ),
         ),

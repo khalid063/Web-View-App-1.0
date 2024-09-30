@@ -123,21 +123,24 @@ class _AboutUsScreenState extends State<AboutUsScreen> {
 
       ///------------------------------------- body ---------------------------------------------------------------------------///
       body: SafeArea(
-        child: Center(
-          child: Text(
-            //'আমাদের সম্পর্কে',
-            _aboutUsContentList.isNotEmpty
-                ? _aboutUsContentList[0].description ?? 'No description available'
-                : 'Loading...',
+        child: Padding(
+          padding: const EdgeInsets.only(left: 20),
+          child: Center(
+            child: Text(
+              //'আমাদের সম্পর্কে',
+              _aboutUsContentList.isNotEmpty
+                  ? _aboutUsContentList[0].description ?? 'No description available'
+                  : 'Loading...',
 
 
-            //'drawar_menu_home'.tr,
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w600,
-              //color: _isHomeSelected ? Colors.white : Colors.blue, // Change text color based on isSelected
-              color: AppColors.primaryColor, // Change text color based on isSelected
-              fontFamily: 'Aikya',
+              //'drawar_menu_home'.tr,
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w600,
+                //color: _isHomeSelected ? Colors.white : Colors.blue, // Change text color based on isSelected
+                color: AppColors.primaryColor, // Change text color based on isSelected
+                fontFamily: 'Aikya',
+              ),
             ),
           ),
         ),
