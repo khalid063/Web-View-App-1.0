@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/material.dart';
+import 'package:web_view_app/presentation/ui/screens/dashboard_screen.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/image_assets.dart';
@@ -125,13 +126,15 @@ class _CustomAppBarState extends State<CustomAppBar> {
               onPressed: () async {
                 //await AuthUtility.clearUserInfo();
                 if (mounted) {
-                  _onBackButtonPress();
+                  //_onBackButtonPress();
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const DashboardScreen(),),);
                 }
               },
               //icon: Icon(Icons.login),
               //icon: Icon(SvgPicture.asset(ImageAssets.homeIconSVG)),
               icon: SvgPicture.asset(
-                ImageAssets.logOutIcon02SVG,
+                //ImageAssets.logOutIcon02SVG,
+                ImageAssets.dashboardIconSVG,
                 width: 24,  // Adjust the width as needed
                 height: 24, // Adjust the height as needed
               ),

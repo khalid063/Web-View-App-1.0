@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:get/get.dart';
 import 'package:web_view_app/presentation/ui/screens/about_us_screen.dart';
 import 'package:web_view_app/presentation/ui/screens/contact_us_screen.dart';
+import 'package:web_view_app/presentation/ui/screens/dashboard_screen.dart';
 import 'package:web_view_app/presentation/ui/screens/why_this_app.dart';
 import 'package:web_view_app/presentation/ui/utils/app_colors.dart';
 import '../screens/home_screen.dart';
@@ -115,6 +116,34 @@ class _CustomDrawerState extends State<CustomDrawer> {
               onTap: () {
                 print("Home 1 is Clicked");
                 Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen(),),);
+              },
+            ),
+            Divider(
+              height: 5,
+              color: Colors.grey[300],
+            ),
+            ///---------------------------------------- ড্যাশবোর্ড  -------------------------------------------------------------///
+            ListTile(
+              //leading: SvgPicture.asset(ImageAssets.homeIcon03SVG, width: 23,),
+              leading: SvgPicture.asset(ImageAssets.dashboardRedIconSVG, width: 23,),
+              //leading: Icon(Icons.home),
+              //title: const Text('হোম'),
+
+              title: const Text(
+                'ড্যাশবোর্ড  ',
+                //'drawar_menu_home'.tr,
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.w600,
+                  //color: _isHomeSelected ? Colors.white : Colors.blue, // Change text color based on isSelected
+                  color: AppColors.primaryColor, // Change text color based on isSelected
+                  fontFamily: 'Aikya',
+                ),
+              ),
+
+              onTap: () {
+                print("Home 1 is Clicked");
+                Navigator.push(context, MaterialPageRoute(builder: (context) => const DashboardScreen(),),);
               },
             ),
             Divider(

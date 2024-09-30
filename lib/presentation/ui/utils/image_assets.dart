@@ -19,6 +19,9 @@ class ImageAssets {
   static const String logOutIcon03SVG = '$_IMAGE_PATH/logout_icon_02.svg';
   static const String logOutIcon04SVG = '$_IMAGE_PATH/logout_icon_04.svg';
 
+  static const String dashboardIconSVG = '$_IMAGE_PATH/dashboard_icon_white.svg';
+  static const String dashboardRedIconSVG = '$_IMAGE_PATH/dashboard_icon_red.svg';
+
 
 
 
